@@ -164,8 +164,9 @@
     \end{center}
     \end{titlepage}
 
-    \thispagestyle{empty}                       % Disable the page number for this page only
+    \pagenumbering{roman}                       % Page numbering style
     \newpage                                    % Add a new page
+    \setcounter{page}{2}                        % Reset counter to 1
 }
 
 
@@ -194,9 +195,10 @@
 
 % ************************************************************************************
 % Table of content page
-\renewcommand{\contentsname}{Table of contents} % Rename the heading
+\newcommand{\tocname}{Table of contents}
+\renewcommand{\contentsname}{\tocname} % Rename the heading
 \newcommand{\ToC}{
-    \pagenumbering{roman}                       % Page numbering style
+    \addcontentsline{toc}{section}{\tocname}    % What appears on the ToC
     \tableofcontents                            % Add the ToC
     \newpage                                    % Add a new page
 }
@@ -205,7 +207,7 @@
 % Content
 \newcommand{\StartContent}{
     \pagenumbering{arabic}                      % Reset to arabic page numbering
-    \setcounter{page}{1}                        % Reset counter to 1
+%     \setcounter{page}{1}                        % Reset counter to 1
 }
 
 % ************************************************************************************
