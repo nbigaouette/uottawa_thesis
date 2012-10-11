@@ -186,23 +186,12 @@
 
 % ************************************************************************************
 % Generic non-numbered section (pre-content)
+% Used for Acknowledgements, Summary, Statement of Originality, etc.
 \newcommand{\GenericNonNumberedSection}[2]{
     \section*{#1}
     \addcontentsline{toc}{section}{#1}    % What appears on the ToC
     #2
     \newpage
-}
-
-% ************************************************************************************
-% Acknowledgements
-\newcommand{\Acknowledgements}[1]{
-    \GenericNonNumberedSection{Acknowledgements}{#1}
-}
-
-% ************************************************************************************
-% Summary
-\newcommand{\Summary}[1]{
-    \GenericNonNumberedSection{Summary}{#1}
 }
 
 % ************************************************************************************
