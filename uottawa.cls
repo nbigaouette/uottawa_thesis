@@ -185,12 +185,18 @@
 
 
 % ************************************************************************************
+% Generic non-numbered section (pre-content)
+\newcommand{\GenericNonNumberedSection}[2]{
+    \section*{#1}
+    \addcontentsline{toc}{section}{#1}    % What appears on the ToC
+    #2
+    \newpage
+}
+
+% ************************************************************************************
 % Acknowledgements
 \newcommand{\Acknowledgements}[1]{
-    \section*{Acknowledgements}
-    \addcontentsline{toc}{section}{Acknowledgements}    % What appears on the ToC
-    #1
-    \newpage
+    \GenericNonNumberedSection{Acknowledgements}{#1}
 }
 
 % ************************************************************************************
