@@ -26,7 +26,7 @@
 %       http://www.grad.uottawa.ca/Default.aspx?tabid=1807&msId=21
 
 
-\ProvidesClass{uottawa}
+\ProvidesClass{uottawa}[2012/10/10 Nicolas Bigaouette]
 
 
 % ************************************************************************************
