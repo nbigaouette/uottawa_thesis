@@ -146,3 +146,15 @@
 % ************************************************************************************
 % Content
 \newcommand{\Content}{\pagenumbering{arabic}  \setcounter{page}{1}}
+
+% ************************************************************************************
+% References
+\newcommand{\References}[1]{
+    \newpage
+    \label{references}
+%     \section{References}
+    % Include everything in the #1.bib file
+    \nocite{*}
+    \bibliographystyle{plain}
+    \bibliography{#1}
+}
