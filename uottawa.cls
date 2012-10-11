@@ -186,7 +186,7 @@
 % Used for Acknowledgements, Summary, Statement of Originality, etc.
 \newcommand{\GenericNonNumberedSection}[2]{
     \section*{#1}
-    \addcontentsline{toc}{section}{#1}    % What appears on the ToC
+    \addcontentsline{toc}{section}{#1}          % What appears on the ToC
     #2
     \newpage
 }
