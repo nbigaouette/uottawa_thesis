@@ -98,6 +98,11 @@
 \fi
 
 
+% Allow to include PDF files directly
+% See http://mirror.its.dal.ca/ctan/macros/latex/contrib/pdfpages/pdfpages.pdf
+% (Need to be _after_ hyperref)
+\usepackage{pdfpages}
+
 %%%%
 % Voir http://forums.gentoo.org/viewtopic-t-202973-highlight-fonts+latex.html
 % \usepackage{mathptmx}
