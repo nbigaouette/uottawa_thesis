@@ -181,7 +181,10 @@
 
 % ************************************************************************************
 % Content
-\newcommand{\Content}{\pagenumbering{arabic}  \setcounter{page}{1}}
+\newcommand{\StartContent}{
+    \pagenumbering{arabic}                      % Reset to arabic page numbering
+    \setcounter{page}{1}                        % Reset counter to 1
+}
 
 % ************************************************************************************
 % References
