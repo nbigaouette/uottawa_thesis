@@ -137,7 +137,38 @@
 
 % ************************************************************************************
 % Title page
-\newcommand{\CoverPage}{\maketitle \thispagestyle{empty} \newpage}
+\newcommand{\CoverPage}{
+
+    \begin{titlepage}
+    \begin{center}
+
+        \vspace*{1.85cm}
+        \begin{LARGE}\textbf{{\uottawa@title}}\end{LARGE}
+
+        \vspace*{2.1cm}
+        \begin{large}{\uottawa@author}\end{large}
+
+        \vspace*{2.55cm}
+        Thesis submitted to the \\
+        Faculty of Graduate and Postdoctoral Studies \\
+        In partial fulfillment of the requirements \\
+        For the Ph.D. degree in Physics \\
+
+        \vspace*{3.45cm}
+        Department of Physics \\
+        Faculty of Science \\
+        University of Ottawa \\
+
+        \vspace*{5.42cm}
+        \textcopyright~\uottawa@author, Ottawa, Canada, \the\year
+    \end{center}
+    \end{titlepage}
+
+    \thispagestyle{empty}                       % Disable the page number for this page only
+    \newpage                                    % Add a new page
+}
+
+
 
 % ************************************************************************************
 % Table of content page
