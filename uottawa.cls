@@ -200,6 +200,12 @@
 }
 
 % ************************************************************************************
+% Summary
+\newcommand{\Summary}[1]{
+    \GenericNonNumberedSection{Summary}{#1}
+}
+
+% ************************************************************************************
 % Table of content page
 \newcommand{\tocname}{Table of contents}
 \renewcommand{\contentsname}{\tocname} % Rename the heading
