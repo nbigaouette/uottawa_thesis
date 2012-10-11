@@ -189,11 +189,10 @@
 % ************************************************************************************
 % References
 \newcommand{\References}[1]{
-    \newpage
-    \label{references}
-%     \section{References}
-    % Include everything in the #1.bib file
-    \nocite{*}
-    \bibliographystyle{plain}
-    \bibliography{#1}
+    \newpage                                    % Start a new page
+    \addcontentsline{toc}{section}{References}  % What appears on the ToC
+    \label{references}                          % Add a label for referencing the section
+    \nocite{*}                                  % Include everything in the #1.bib file
+    \bibliographystyle{plain}                   % Bibliography's style
+    \bibliography{#1}                           % Read the bibliography file
 }
