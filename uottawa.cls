@@ -182,6 +182,16 @@
     \newpage                                    % Add a new page
 }
 
+
+% ************************************************************************************
+% Acknowledgements
+\newcommand{\Acknowledgements}[1]{
+    \section*{Acknowledgements}
+    \addcontentsline{toc}{section}{Acknowledgements}    % What appears on the ToC
+    #1
+    \newpage
+}
+
 % ************************************************************************************
 % Table of content page
 \renewcommand{\contentsname}{Table of contents} % Rename the heading
