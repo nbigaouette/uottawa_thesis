@@ -172,7 +172,12 @@
 
 % ************************************************************************************
 % Table of content page
-\newcommand{\ToC}{\pagenumbering{roman} \tableofcontents \newpage}
+\renewcommand{\contentsname}{Table of contents} % Rename the heading
+\newcommand{\ToC}{
+    \pagenumbering{roman}                       % Page numbering style
+    \tableofcontents                            % Add the ToC
+    \newpage                                    % Add a new page
+}
 
 % ************************************************************************************
 % Content
