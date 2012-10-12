@@ -98,10 +98,24 @@
 \fi
 
 
+\usepackage{fancyhdr}
+\renewcommand{\headrule}{}  % Disable the header ruler
+\newcommand{\pagenumberstyle}{
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{\vspace{10pt}\thepage}
+}
+
+
 % Allow to include PDF files directly
 % See http://mirror.its.dal.ca/ctan/macros/latex/contrib/pdfpages/pdfpages.pdf
 % (Need to be _after_ hyperref)
 \usepackage{pdfpages}
+\includepdfset{pagecommand=\pagenumberstyle}   % Include page number too
+
 
 %%%%
 % Voir http://forums.gentoo.org/viewtopic-t-202973-highlight-fonts+latex.html
