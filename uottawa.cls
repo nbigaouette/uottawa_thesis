@@ -116,6 +116,28 @@
 \usepackage{pdfpages}
 \includepdfset{pagecommand=\pagenumberstyle}   % Include page number too
 
+\usepackage{titlesec}
+\newcommand{\SectionStyleContent}{
+    \titleformat
+        {\section}
+        [display]
+        {\normalfont\bfseries\raggedleft\Huge}
+        {\vspace*{3cm}\Huge\thesection\\ \line(1,0){300}}
+        {10pt}
+        {}
+        [\vspace*{3cm}]
+}
+\newcommand{\SectionStylePre}{
+    \titleformat
+        {\section}
+        [display]
+        {\normalfont\bfseries\centering\Huge}
+        {}
+        {}
+        {}
+        [\vspace*{1cm}]
+}
+
 
 %%%%
 % Voir http://forums.gentoo.org/viewtopic-t-202973-highlight-fonts+latex.html
@@ -184,8 +206,13 @@
     \end{titlepage}
 
     \pagenumbering{roman}                       % Page numbering style
+    \rfoot{\pagenumberstyle}
+    \pagestyle{fancy}
+    \pagenumberstyle
+
     \newpage                                    % Add a new page
-    \setcounter{page}{2}                        % Reset counter to 1
+
+    \SectionStylePre
 }
 
 
@@ -224,16 +251,19 @@
 % Content
 \newcommand{\StartContent}{
     \pagenumbering{arabic}                      % Reset to arabic page numbering
-%     \setcounter{page}{1}                        % Reset counter to 1
+
+    \SectionStyleContent
 }
 
 % ************************************************************************************
 % References
 \newcommand{\References}[1]{
     \newpage                                    % Start a new page
+    \SectionStylePre
     \addcontentsline{toc}{section}{References}  % What appears on the ToC
     \label{references}                          % Add a label for referencing the section
     \nocite{*}                                  % Include everything in the #1.bib file
     \bibliographystyle{plain}                   % Bibliography's style
     \bibliography{#1}                           % Read the bibliography file
 }
+
