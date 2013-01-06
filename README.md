@@ -1,8 +1,13 @@
 UOttawa LaTeX Thesis Template
 ================================
 
-This is a LaTeX document class for a University of Ottawa's PhD thesis, more
-specifically from the Physics Department (Faculty of Science).
+This is a LaTeX document class I wrote for my PhD thesis in Physics at the
+University of Ottawa.
+
+I tried to follow as much as possible the different guidelines from the Physics
+Department, the Faculty of Science and the Faculty of Graduate and Postdoctoral
+Studies.
+
 
 Usage
 -------------------------
