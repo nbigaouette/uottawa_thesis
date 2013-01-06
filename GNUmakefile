@@ -211,6 +211,7 @@ LATEXCLEAN+= $(FILE).nav $(FILE).snm  $(FILE).vrb
 LATEXCLEAN+= *.aux *.blg
 LATEXCLEAN+= $(FILE).haux $(FILE).htoc
 
+MORECLEAN += *.bbl *.spl *.backup
 LATEXCLEAN+= $(MORECLEAN)
 
 # MOREPURGE: see MORECLEAN, but for the purge target
