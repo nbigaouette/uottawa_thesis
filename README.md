@@ -15,7 +15,8 @@ Use it as a document class:
 
     \documentclass[author={Your name},title={Thesis' title},draft=true]{uottawa}
 
-See example_thesis.tex for a basic example.
+See the file example/example_thesis.tex for a basic example. I also included
+the compiled version in example/example_thesis.pdf.
 
 Notes
 -------------------------
