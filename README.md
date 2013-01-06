@@ -32,23 +32,17 @@ respect their requirements.
 
 
 Useful guides/links that I used:
- * More Info
-
-   Most detailed information of formatting
+ * Most detailed information of formatting
    http://web5.uottawa.ca/www3/fespfgps/theses/do-en-2point5num1.htm
  * University of Ottawa Thesis LaTeX Template
-
    Wail Gueaieb, Ph.D., P.Eng., SMIEEE, Associate Professor
    http://miram1.site.uottawa.ca/~wgueaieb/site/index.php?id=9
  * Thesis Style Files
-
    Monica Nevins, Associate Professor
    http://padic.mathstat.uottawa.ca/~mnevins/thesis/
  * Guide for Doctoral thesis
-
    http://www.grad.uottawa.ca/Default.aspx?tabid=1373
  * General Regulations
-
    http://www.grad.uottawa.ca/Default.aspx?tabid=1807&msId=21
 
 License
