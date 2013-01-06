@@ -282,7 +282,6 @@
     \newpage                                    % Start a new page
     \renewcommand\refname{}                     % Clear the bibliography's title (which appears twice)
     \section{References}                        % Add a subsection instead
-    \label{references}                          % Add a label for referencing the section
     \ReferencesGeneric{#1}
 }
 
@@ -292,7 +291,6 @@
     \newpage                                    % Start a new page
     \renewcommand\refname{}                     % Clear the bibliography's title (which appears twice)
     \subsection{References}                     % Add a subsection instead
-    \label{references}                          % Add a label for referencing the section
     \ReferencesGeneric{#1}
 }
 
