@@ -256,14 +256,41 @@
 }
 
 % ************************************************************************************
-% References
-\newcommand{\References}[1]{
-    \newpage                                    % Start a new page
-    \SectionStylePre
-    \addcontentsline{toc}{section}{References}  % What appears on the ToC
-    \label{references}                          % Add a label for referencing the section
+% References (generic)
+\newcommand{\ReferencesGeneric}[1]{
     \nocite{*}                                  % Include everything in the #1.bib file
     \bibliographystyle{plain}                   % Bibliography's style
     \bibliography{#1}                           % Read the bibliography file
+}
+
+% ************************************************************************************
+% References (at end of document)
+\newcommand{\ReferencesEnd}[1]{
+    \newpage                                    % Start a new page
+    \renewcommand\refname{References}           % Set the bibliography's title
+    \SectionStylePre
+    \addcontentsline{toc}{section}{References}  % What appears on the ToC
+    \label{references}                          % Add a label for referencing the section
+    \ReferencesGeneric{#1}
+}
+
+% ************************************************************************************
+% References (as a section)
+\newcommand{\ReferencesSection}[1]{
+    \newpage                                    % Start a new page
+    \renewcommand\refname{}                     % Clear the bibliography's title (which appears twice)
+    \section{References}                        % Add a subsection instead
+    \label{references}                          % Add a label for referencing the section
+    \ReferencesGeneric{#1}
+}
+
+% ************************************************************************************
+% References (as a subsection)
+\newcommand{\ReferencesSubsection}[1]{
+    \newpage                                    % Start a new page
+    \renewcommand\refname{}                     % Clear the bibliography's title (which appears twice)
+    \subsection{References}                     % Add a subsection instead
+    \label{references}                          % Add a label for referencing the section
+    \ReferencesGeneric{#1}
 }
 
