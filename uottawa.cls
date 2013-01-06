@@ -29,6 +29,9 @@
 \ProvidesClass{uottawa}[2012/10/10 Nicolas Bigaouette]
 
 
+% Bibliography's style
+\bibliographystyle{plain}
+
 % ************************************************************************************
 % ************************************************************************************
 %   Options to pass to the class
@@ -259,7 +262,6 @@
 % References (generic)
 \newcommand{\ReferencesGeneric}[1]{
     \nocite{*}                                  % Include everything in the #1.bib file
-    \bibliographystyle{plain}                   % Bibliography's style
     \bibliography{#1}                           % Read the bibliography file
 }
 
