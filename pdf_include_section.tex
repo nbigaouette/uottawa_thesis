@@ -1,0 +1,25 @@
+
+\newcommand{\PaperTitleOne}{Paper One's Title}
+
+\section{\PaperTitleOne}
+
+\begin{flushright}
+Author 1, Author 2, Author 3
+\end{flushright}
+
+This feature includes a PDF file directly into the compiled LaTeX document.
+
+See the \href{http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages/}{pdfpages}
+package documentation.
+
+The following pages are from the direct inclusion of the file
+\textbf{pdf/paper\_one.pdf}.
+
+\includepdf[pages=-,
+            addtotoc={
+                1,subsection,2,Title Page,paper_one_title,
+                1,subsection,2,Content,paper_one_content,
+                1,subsection,2,Section 1,paper_one_section_one,
+                2,subsection,2,Section 2,paper_one_section_two,
+                2,subsection,2,Section 3,paper_one_section_three
+            }]{pdf/paper_one.pdf}
