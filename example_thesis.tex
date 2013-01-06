@@ -1,0 +1,48 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%          Written by Nicolas Bigaouette               %%
+%%                    Fall 2012                         %%
+%%              nbigaouette@gmail.com                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\Title}{Full Thesis Title}
+\newcommand{\Author}{Author's name}
+
+% University of Ottawa thesis formatting
+\documentclass[author={\Author},title={\Title},draft=false]{uottawa}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\CoverPage
+
+\SmallAcknowledgements{
+Acknowledgements that\\
+appear on the right.
+}
+
+\include{summary}
+\include{statementoforiginality}
+\include{acknowledgements}
+\include{forword}
+
+\ToC
+
+\StartContent
+
+\include{introduction}
+
+% Papers here
+\include{pdf_include_section}
+
+\include{other}
+
+\include{conclusion}
+
+
+%\ReferencesSection{references}
+
+
+\end{document}
