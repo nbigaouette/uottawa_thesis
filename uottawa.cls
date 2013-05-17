@@ -138,6 +138,14 @@
 % Disable showing the date
 \date{}
 
+\setcounter{secnumdepth}{3} % Depth of section numbering
+\setcounter{tocdepth}{4}    % Depth of sections to include in Table of Content
+
+% Define deeper levels of sections
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\newcommand{\subsubsubsubsection}[1]{\subparagraph{#1}\mbox{}\\}
+
+
 % ******************************************************************************
 % ******************************************************************************
 %       Define new commands for the different sections
