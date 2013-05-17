@@ -67,7 +67,6 @@
 \linespread{1.3}    % ``One and a half''
 %\linespread{1.6}    % ``Double''
 
-\usepackage{ifthen}
 \usepackage{ifpdf}
 \ifpdf
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
