@@ -128,6 +128,14 @@
 %        End of packages inclusion
 % ******************************************************************************
 
+
+% Set title and author from arguments to class
+\title{\uottawa@title}
+\author{\uottawa@author}
+
+% Disable showing the date
+\date{}
+
 % ******************************************************************************
 % ******************************************************************************
 %       Define new commands for the different sections
@@ -157,14 +165,6 @@
 }
 
 
-
-
-% Set title and author from arguments to class
-\title{\uottawa@title}
-\author{\uottawa@author}
-
-% Disable showing the date
-\date{}
 
 
 % ******************************************************************************
