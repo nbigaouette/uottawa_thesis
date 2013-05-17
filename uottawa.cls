@@ -61,24 +61,24 @@
 
 
 % Define the margins
-\usepackage[left=3.25cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\RequirePackage[left=3.25cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 
 % Line spacing
 \linespread{1.3}    % ``One and a half''
 %\linespread{1.6}    % ``Double''
 
-\usepackage{ifpdf}
+\RequirePackage{ifpdf}
 \ifpdf
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % PDF compilation with "pdflatex"
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \usepackage[pdftex]{graphicx}
+    \RequirePackage[pdftex]{graphicx}
     \def\pdfshellescape{1}
     \pdfcompresslevel=9
     %%%
     % PDF options
     % See http://barrault.free.fr/ressources/rapports/pdflatex/
-    \usepackage[pdftex,
+    \RequirePackage[pdftex,
         bookmarks = true,
         bookmarksnumbered = true,
         bookmarksopen = true,
@@ -95,7 +95,7 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % DVI compilation with "latex"
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \usepackage[dvips]{graphicx}
+    \RequirePackage[dvips]{graphicx}
     \newcommand{\url}[1]{{\color{blue}#1}}
 \fi
 
