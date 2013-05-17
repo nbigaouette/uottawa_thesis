@@ -92,6 +92,8 @@
         unicode = true,
         plainpages = false,pdfpagelabels
     ]{hyperref}
+    % Figure hyperlink to top of figure, not caption
+    \RequirePackage[all]{hypcap}
 \else
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % DVI compilation with "latex"
