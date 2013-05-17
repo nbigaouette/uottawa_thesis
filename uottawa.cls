@@ -119,7 +119,15 @@
 \usepackage{pdfpages}
 \includepdfset{pagecommand=\pagenumberstyle}   % Include page number too
 
+
 \usepackage{titlesec}
+
+% ******************************************************************************
+% ******************************************************************************
+%       Define new commands for the different sections
+% ******************************************************************************
+
+% Generic sections
 \newcommand{\SectionStyleContent}{
     \titleformat
         {\section}
