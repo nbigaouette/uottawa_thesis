@@ -145,9 +145,6 @@
 
 
 
-
-% \renewcommand{\labelenumi}{\alph{enumi}) }
-
 % Set title and author from arguments to class
 \title{\uottawa@title}
 \author{\uottawa@author}
