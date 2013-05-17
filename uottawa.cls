@@ -102,6 +102,9 @@
     \newcommand{\url}[1]{{\color{blue}#1}}
 \fi
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Include an appendix and put it in the Table of Content
+\RequirePackage[toc,page]{appendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Change headers and footers, page number location, etc.
