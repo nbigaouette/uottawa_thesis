@@ -43,8 +43,6 @@
 \ProcessKeyvalOptions*
 \relax
 
-% Bibliography's style
-\bibliographystyle{plain}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Define booleans flags draft/final
@@ -73,6 +71,10 @@
 % Use UTF-8
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography's style
+\bibliographystyle{uottawa}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
