@@ -116,11 +116,13 @@
 % Allow to include PDF files directly
 % See http://mirror.its.dal.ca/ctan/macros/latex/contrib/pdfpages/pdfpages.pdf
 % (Need to be _after_ hyperref)
-\usepackage{pdfpages}
+\RequirePackage{pdfpages}
 \includepdfset{pagecommand=\pagenumberstyle}   % Include page number too
 
 
-\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Different kind of section titles
+\RequirePackage{titlesec}
 
 
 % ******************************************************************************
