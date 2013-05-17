@@ -101,7 +101,7 @@
 \fi
 
 
-\usepackage{fancyhdr}
+\RequirePackage{fancyhdr}
 \renewcommand{\headrule}{}  % Disable the header ruler
 \newcommand{\pagenumberstyle}{
 \lhead{}
