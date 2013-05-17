@@ -144,24 +144,6 @@
 
 
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %                       Page format
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \textheight=21cm
-% \textwidth=17.0cm
-% \oddsidemargin=0cm
-% \evensidemargin=0cm
-% \topmargin=0cm
-% \headsep=20pt
-% \topskip=10pt
-% \large
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% % These adjust how LaTeX puts figures onto pages with text. These values
-% % reduce the likelihood that a figure will end up by itself on a page.
-% \renewcommand{\topfraction}{0.85}
-% \renewcommand{\textfraction}{0.1}
-% \renewcommand{\floatpagefraction}{0.75}
 
 
 % \renewcommand{\labelenumi}{\alph{enumi}) }
