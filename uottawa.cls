@@ -26,38 +26,49 @@
 %       http://www.grad.uottawa.ca/Default.aspx?tabid=1807&msId=21
 
 
-\ProvidesClass{uottawa}[2012/10/10 Nicolas Bigaouette]
+% http://en.wikibooks.org/wiki/LaTeX/Creating_Packages#Creating_your_own_class
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{uottawa}[2013/05/05 Nicolas Bigaouette]
 
+% ******************************************************************************
+% ******************************************************************************
+% http://ctan.mirror.rafal.ca/macros/latex/contrib/oberdiek/kvoptions.pdf
+% Package's options
+\RequirePackage{kvoptions}
+\RequirePackage{kvoptions-patch}
+\DeclareStringOption[Thesis' title]{title}      % Thesis' title
+\DeclareStringOption[Thesis' author]{author}    % Thesis' author
+\DeclareBoolOption{draft}
+\DeclareComplementaryOption{final}{draft}
+\ProcessKeyvalOptions*
+\relax
 
 % Bibliography's style
 \bibliographystyle{plain}
 
-% ************************************************************************************
-% ************************************************************************************
-%   Options to pass to the class
-% ************************************************************************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define booleans flags draft/final
+\RequirePackage{ifthen}
+\newboolean{isdraft}
+\newboolean{isfinal}
+\ifuottawa@draft
+\setboolean{isdraft}{true}
+\setboolean{isfinal}{false}
+\else
+\setboolean{isdraft}{false}
+\setboolean{isfinal}{true}
+\fi
 
-% \RequirePackage{kvoptions-patch}
-\RequirePackage{kvoptions}
 
-% % Enable the ``draft'' option to uottawa's class
-% \newcommand{\extraoptions}{}
-% \DeclareOption{draft}{\renewcommand{\extraoptions}{,draft}}
-% \DeclareStringOption{draft}{\renewcommand{\extraoptions}{,draft}}
-% \DeclareBoolOption{draft}
-\DeclareBoolOption{draft}
-\DeclareComplementaryOption{final}{draft}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ``Inherit'' from the article class
+\LoadClass[12pt,letterpaper,draft=\boolean{isdraft}]{article}
 
-\DeclareStringOption{title}
-\DeclareStringOption{author}
+% ******************************************************************************
+% ******************************************************************************
+%        Start of packages inclusion
+% ******************************************************************************
 
-\ProcessKeyvalOptions*
-% ************************************************************************************
-% ************************************************************************************
-
-% Load the ``article'' class with the right options
-% \LoadClass[12pt,letterpaper\extraoptions]{article}
-\LoadClass[12pt,letterpaper]{article}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
