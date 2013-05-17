@@ -130,6 +130,7 @@
         {}
         [\vspace*{3cm}]
 }
+% ******************************************************************************
 \newcommand{\SectionStylePre}{
     \titleformat
         {\section}
@@ -179,7 +180,7 @@
 \date{}
 
 
-% ************************************************************************************
+% ******************************************************************************
 % Title page
 \newcommand{\CoverPage}{
 
@@ -219,7 +220,7 @@
 }
 
 
-% ************************************************************************************
+% ******************************************************************************
 % Acknowledgements (small sentence)
 \newcommand{\SmallAcknowledgements}[1]{
     \vspace*{5.4cm}                             % Skip some vertical space
@@ -230,7 +231,7 @@
 }
 
 
-% ************************************************************************************
+% ******************************************************************************
 % Generic non-numbered section (pre-content)
 % Used for Acknowledgements, Summary, Statement of Originality, etc.
 \newcommand{\GenericNonNumberedSection}[2]{
@@ -240,7 +241,7 @@
     \newpage
 }
 
-% ************************************************************************************
+% ******************************************************************************
 % Table of content page
 \newcommand{\tocname}{Table of contents}
 \renewcommand{\contentsname}{\tocname} % Rename the heading
@@ -250,7 +251,7 @@
     \newpage                                    % Add a new page
 }
 
-% ************************************************************************************
+% ******************************************************************************
 % Content
 \newcommand{\StartContent}{
     \pagenumbering{arabic}                      % Reset to arabic page numbering
@@ -258,14 +259,14 @@
     \SectionStyleContent
 }
 
-% ************************************************************************************
+% ******************************************************************************
 % References (generic)
 \newcommand{\ReferencesGeneric}[1]{
     \nocite{*}                                  % Include everything in the #1.bib file
     \bibliography{#1}                           % Read the bibliography file
 }
 
-% ************************************************************************************
+% ******************************************************************************
 % References (at end of document)
 \newcommand{\ReferencesEnd}[1]{
     \newpage                                    % Start a new page
@@ -276,7 +277,7 @@
     \ReferencesGeneric{#1}
 }
 
-% ************************************************************************************
+% ******************************************************************************
 % References (as a section)
 \newcommand{\ReferencesSection}[1]{
     \newpage                                    % Start a new page
@@ -285,7 +286,7 @@
     \ReferencesGeneric{#1}
 }
 
-% ************************************************************************************
+% ******************************************************************************
 % References (as a subsection)
 \newcommand{\ReferencesSubsection}[1]{
     \newpage                                    % Start a new page
