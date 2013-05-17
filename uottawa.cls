@@ -143,12 +143,6 @@
 }
 
 
-%%%%
-% Voir http://forums.gentoo.org/viewtopic-t-202973-highlight-fonts+latex.html
-% \usepackage{mathptmx}
-% \usepackage[scaled=.90]{helvet}
-% \usepackage{courier}
-%%%%
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %                       Page format
