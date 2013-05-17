@@ -7,8 +7,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
 % Useful guides/links:
 %   More Info
 %       Most detailed information of formatting
@@ -148,7 +146,6 @@
 % Different kind of section titles
 \RequirePackage{titlesec}
 
-
 % ******************************************************************************
 % ******************************************************************************
 %        End of packages inclusion
@@ -197,9 +194,6 @@
         {}
         [\vspace*{1cm}]
 }
-
-
-
 
 % ******************************************************************************
 % Title page
@@ -315,4 +309,3 @@
     \subsection{References}                     % Add a subsection instead
     \ReferencesGeneric{#1}
 }
-
