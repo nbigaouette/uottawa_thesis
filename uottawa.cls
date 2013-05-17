@@ -101,6 +101,8 @@
 \fi
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Change headers and footers, page number location, etc.
 \RequirePackage{fancyhdr}
 \renewcommand{\headrule}{}  % Disable the header ruler
 \newcommand{\pagenumberstyle}{
