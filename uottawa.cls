@@ -305,11 +305,16 @@
 % ******************************************************************************
 % Table of content page
 \newcommand{\tocname}{Table of contents}
+\newcommand{\lofname}{List of Figures}
 \renewcommand{\contentsname}{\tocname} % Rename the heading
 \newcommand{\ToC}{
     \phantomsection
     \addcontentsline{toc}{section}{\tocname}    % What appears on the ToC
     \tableofcontents                            % Add the ToC
+    \newpage                                    % Add a new page
+    \phantomsection
+    \addcontentsline{toc}{section}{\lofname}    % What appears on the ToC
+    \listoffigures                              % List of figures
     \newpage                                    % Add a new page
 }
 
