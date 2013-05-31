@@ -13,7 +13,7 @@ Usage
 -------------------------
 Use it as a document class:
 
-    \documentclass[author={Your name},title={Thesis' title},linenumbers,draft=true]{uottawa}
+    \documentclass[author={Your name},title={Thesis' title},degree={Ph.D.},linenumbers,draft=true]{uottawa}
 
 See the file example/example_thesis.tex for a basic example. I also included
 the compiled version in example/example_thesis.pdf.
@@ -25,6 +25,7 @@ Required option:
 
 Optional options:
 
+ * degree: Degree to be obtained (defaults to Ph.D.)
  * linenumbers: Add line numbers before at start of every lines for ease of edition.
  * draft: Makes compilation faster by skipping some LaTeX options. Will not include
           external PDF or figures for example.

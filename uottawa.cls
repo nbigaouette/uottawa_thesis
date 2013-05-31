@@ -36,6 +36,7 @@
 \RequirePackage{kvoptions-patch}
 \DeclareStringOption[Thesis' title]{title}      % Thesis' title
 \DeclareStringOption[Thesis' author]{author}    % Thesis' author
+\DeclareStringOption[Ph.D.]{degree}             % Degree name
 \DeclareBoolOption{draft}
 \DeclareComplementaryOption{final}{draft}
 \DeclareBoolOption{linenumbers}
@@ -249,7 +250,7 @@
         Thesis submitted to the \\
         Faculty of Graduate and Postdoctoral Studies \\
         In partial fulfillment of the requirements \\
-        For the Ph.D. degree in Physics \\
+        For the \uottawa@degree~degree in Physics \\
 
         \vfill
         Ottawa-Carleton Institute of Physics \\
