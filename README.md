@@ -13,10 +13,23 @@ Usage
 -------------------------
 Use it as a document class:
 
-    \documentclass[author={Your name},title={Thesis' title},draft=true]{uottawa}
+    \documentclass[author={Your name},title={Thesis' title},linenumbers,draft=true]{uottawa}
 
 See the file example/example_thesis.tex for a basic example. I also included
 the compiled version in example/example_thesis.pdf.
+
+Required option:
+
+ * author: Your name. Must be enclosed in brackets "{}"
+ * title: Title of the thesis. Must be enclosed in brackets "{}"
+
+Optional options:
+
+ * linenumbers: Add line numbers before at start of every lines for ease of edition.
+ * draft: Makes compilation faster by skipping some LaTeX options. Will not include
+          external PDF or figures for example.
+ * final: Opposite of the "draft" option.
+
 
 Notes
 -------------------------
