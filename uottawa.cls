@@ -97,6 +97,7 @@
     % PDF options
     % See http://barrault.free.fr/ressources/rapports/pdflatex/
     \RequirePackage[pdftex,
+        draft=false,
         bookmarks = true,
         bookmarksnumbered = true,
         bookmarksopen = true,
