@@ -38,6 +38,8 @@
 \DeclareStringOption[Thesis' author]{author}    % Thesis' author
 \DeclareBoolOption{draft}
 \DeclareComplementaryOption{final}{draft}
+\DeclareBoolOption{linenumbers}
+\DeclareComplementaryOption{nolinenumbers}{linenumbers}
 \ProcessKeyvalOptions*
 \relax
 
@@ -183,6 +185,31 @@
 \newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
 \newcommand{\subsubsubsubsection}[1]{\subparagraph{#1}\mbox{}\\}
 
+% ******************************************************************************
+% Allows using ``lineno'' package with line numbers in paragraph before equations
+% See http://www.latex-community.org/viewtopic.php?f=4&t=163
+% and http://phaseportrait.blogspot.ca/2007/08/lineno-and-amsmath-compatibility.html
+\ifuottawa@linenumbers
+\RequirePackage{lineno}
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+    \expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+    \expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+    \renewenvironment{#1}%
+        {\linenomath\csname old#1\endcsname}%
+        {\csname oldend#1\endcsname\endlinenomath}}%
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+    \patchAmsMathEnvironmentForLineno{#1}%
+    \patchAmsMathEnvironmentForLineno{#1*}}%
+\AtBeginDocument{%
+\patchBothAmsMathEnvironmentsForLineno{equation}%
+\patchBothAmsMathEnvironmentsForLineno{align}%
+\patchBothAmsMathEnvironmentsForLineno{flalign}%
+\patchBothAmsMathEnvironmentsForLineno{alignat}%
+\patchBothAmsMathEnvironmentsForLineno{gather}%
+\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
+\linenumbers
+\fi
 
 % ******************************************************************************
 % ******************************************************************************
