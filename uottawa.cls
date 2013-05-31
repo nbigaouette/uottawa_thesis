@@ -45,22 +45,10 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Define booleans flags draft/final
-\RequirePackage{ifthen}
-\newboolean{isdraft}
-\newboolean{isfinal}
-\ifuottawa@draft
-\setboolean{isdraft}{true}
-\setboolean{isfinal}{false}
-\else
-\setboolean{isdraft}{false}
-\setboolean{isfinal}{true}
-\fi
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ``Inherit'' from the article class
-\LoadClass[12pt,letterpaper,draft=\boolean{isdraft}]{article}
+\LoadClass[12pt,letterpaper]{article}
 
 % ******************************************************************************
 % ******************************************************************************
@@ -85,6 +73,8 @@
 \linespread{1.3}    % ``One and a half''
 %\linespread{1.6}    % ``Double''
 
+
+\RequirePackage{ifthen}
 \RequirePackage{ifpdf}
 \ifpdf
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
