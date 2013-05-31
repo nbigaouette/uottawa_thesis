@@ -239,24 +239,24 @@
     \begin{titlepage}
     \begin{center}
 
-        \vspace*{1.85cm}
+        \vfill
         \begin{LARGE}\textbf{{\uottawa@title}}\end{LARGE}
 
-        \vspace*{2.1cm}
+        \vfill
         \begin{large}{\uottawa@author}\end{large}
 
-        \vspace*{2.55cm}
+        \vfill
         Thesis submitted to the \\
         Faculty of Graduate and Postdoctoral Studies \\
         In partial fulfillment of the requirements \\
         For the Ph.D. degree in Physics \\
 
-        \vspace*{3.45cm}
+        \vfill
         Department of Physics \\
         Faculty of Science \\
         University of Ottawa \\
 
-        \vspace*{5.42cm}
+        \vfill
         \textcopyright~\uottawa@author, Ottawa, Canada, \the\year
     \end{center}
     \end{titlepage}
