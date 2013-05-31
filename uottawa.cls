@@ -295,6 +295,7 @@
 % Generic non-numbered section (pre-content)
 % Used for Acknowledgements, Summary, Statement of Originality, etc.
 \newcommand{\GenericNonNumberedSection}[2]{
+    \phantomsection
     \section*{#1}
     \addcontentsline{toc}{section}{#1}          % What appears on the ToC
     #2
@@ -306,6 +307,7 @@
 \newcommand{\tocname}{Table of contents}
 \renewcommand{\contentsname}{\tocname} % Rename the heading
 \newcommand{\ToC}{
+    \phantomsection
     \addcontentsline{toc}{section}{\tocname}    % What appears on the ToC
     \tableofcontents                            % Add the ToC
     \newpage                                    % Add a new page
@@ -332,6 +334,7 @@
     \newpage                                    % Start a new page
     \renewcommand\refname{References}           % Set the bibliography's title
     \SectionStylePre
+    \phantomsection
     \addcontentsline{toc}{section}{References}  % What appears on the ToC
     \label{references}                          % Add a label for referencing the section
     \ReferencesGeneric{#1}
