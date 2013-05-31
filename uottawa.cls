@@ -104,7 +104,7 @@
         pdfpagemode = UseOutlines,
         pdfstartview = FitH,
         colorlinks,
-        citecolor=black,urlcolor=blue,linkcolor=black,
+        citecolor=blue,urlcolor=blue,linkcolor=black,
         pdfauthor={\uottawa@author},
         pdftitle={\uottawa@title},
         unicode = true,
