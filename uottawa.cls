@@ -252,9 +252,11 @@
         For the Ph.D. degree in Physics \\
 
         \vfill
+        Ottawa-Carleton Institute of Physics \\
         Department of Physics \\
         Faculty of Science \\
         University of Ottawa \\
+        Ottawa, Canada
 
         \vfill
         \textcopyright~\uottawa@author, Ottawa, Canada, \the\year
