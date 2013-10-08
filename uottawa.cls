@@ -161,7 +161,6 @@
       Install pax-tds from http://www.ctan.org/tex-archive/macros/latex/contrib/pax/
     }%
   }%
-
 \fi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -221,6 +220,7 @@
 }
 \linenumbers
 \fi
+
 
 % ******************************************************************************
 % ******************************************************************************
@@ -374,6 +374,7 @@
     \subsection{References}                     % Add a subsection instead
     \ReferencesGeneric{#1}
 }
+
 % ******************************************************************************
 % Hide subsection number for an included PDF's abstract
 % See: http://tex.stackexchange.com/questions/45150/how-to-remove-zero-preceding-section-number
@@ -402,3 +403,4 @@
     \makeatother
 }
 % ******************************************************************************
+
