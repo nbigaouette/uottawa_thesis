@@ -363,6 +363,7 @@
     \newpage                                    % Start a new page
     \renewcommand\refname{}                     % Clear the bibliography's title (which appears twice)
     \section{References}                        % Add a subsection instead
+    \vspace{-170pt}
     \ReferencesGeneric{#1}
 }
 
