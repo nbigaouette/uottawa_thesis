@@ -295,7 +295,7 @@
 % ******************************************************************************
 % Acknowledgements (small sentence)
 \newcommand{\SmallAcknowledgements}[1]{
-    \vspace*{5.4cm}                             % Skip some vertical space
+    %\vspace*{5.4cm}                             % Skip some vertical space
     \begin{flushright}{#1}\end{flushright}      % Text right justified
 
     \thispagestyle{empty}                       % Disable the page number for this page only
