@@ -180,6 +180,9 @@
 \newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
 \newcommand{\subsubsubsubsection}[1]{\subparagraph{#1}\mbox{}\\}
 
+% Multicolumns inside tables
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+
 % ******************************************************************************
 % Allows using ``lineno'' package with line numbers in paragraph before equations
 % See http://www.latex-community.org/viewtopic.php?f=4&t=163
