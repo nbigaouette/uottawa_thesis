@@ -379,3 +379,17 @@
     \makeatother
 }
 
+% ******************************************************************************
+% Hide 2 subsections number for an included PDF
+% See: http://tex.stackexchange.com/questions/45150/how-to-remove-zero-preceding-section-number
+\newcommand{\HidePDFTwoNumbers}{
+    \setcounter{subsection}{-2}
+    \makeatletter
+    \renewcommand{\thesubsection}{
+        \ifnum \c@subsection<1 {}                   % Hide subsection 0
+        \else  \thesection.\@arabic\c@subsection    % Show everything else as normal
+        \fi
+    }
+    \makeatother
+}
+% ******************************************************************************
