@@ -91,6 +91,7 @@
     % See http://barrault.free.fr/ressources/rapports/pdflatex/
     \RequirePackage[pdftex,
         draft=false,
+        backref=page,
         bookmarks = true,
         bookmarksnumbered = true,
         bookmarksopen = true,
