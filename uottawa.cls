@@ -183,6 +183,10 @@
 % Multicolumns inside tables
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 
+% Harmonies the figures' width
+\newcommand{\figurewidth}{0.95\columnwidth}
+
+
 % ******************************************************************************
 % Allows using ``lineno'' package with line numbers in paragraph before equations
 % See http://www.latex-community.org/viewtopic.php?f=4&t=163
