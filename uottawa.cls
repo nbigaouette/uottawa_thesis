@@ -365,3 +365,17 @@
     \subsection{References}                     % Add a subsection instead
     \ReferencesGeneric{#1}
 }
+% ******************************************************************************
+% Hide subsection number for an included PDF's abstract
+% See: http://tex.stackexchange.com/questions/45150/how-to-remove-zero-preceding-section-number
+\newcommand{\HidePDFAbstractNumber}{
+    \setcounter{subsection}{-1}
+    \makeatletter
+    \renewcommand{\thesubsection}{
+        \ifnum \c@subsection<1 {}                   % Hide subsection 0
+        \else  \thesection.\@arabic\c@subsection    % Show everything else as normal
+        \fi
+    }
+    \makeatother
+}
+
